@@ -256,13 +256,13 @@ function createApplicationCard({ application }) {
 
   const companyNameText = createElement({
     type: 'p',
-    attributes: { class: 'company-name' },
+    attributes: { class: 'company-name hide-overflow' },
     innerText: `Company name: ${application.professional.institution}`,
   });
 
   const skillsText = createElement({
     type: 'p',
-    attributes: { class: 'skills' },
+    attributes: { class: 'skills hide-overflow' },
     innerText: `Skills: ${application.professional.skills}`,
   });
 
@@ -272,7 +272,7 @@ function createApplicationCard({ application }) {
 
   const introductionText = createElement({
     type: 'p',
-    attributes: { class: 'user-intro' },
+    attributes: { class: 'user-intro hide-overflow' },
     innerText: application.intro.introduction.slice(0, 200),
   });
 
